@@ -1,0 +1,2949 @@
+Autosuggest APIs
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+The Autosuggest API helps users to complete queries faster by adding intelligent search capabilities to your web or mobile app. This API returns a list of results as well as suggested queries as the user types in the search field. This API also supports Hindi language. If a user enters query in hindi language he will get results in Hindi.
+
+Autosuggest API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Autosuggest API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+lang is a premium response parameter linked to our regional language support. Only clients who have specific agreements for its usage will be able to get this in their response parameter.
+The maximum length of valid input query is 45. For longer queries, API will return 400 Bad Request - Too Long Input
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Autosuggest API
+
+
+GET
+/search/places/autosuggest/json
+AutoSuggest API
+
+
+Geolocation API
+Geolocation API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+A minimum of one cell tower object is required and a maximum of six cell tower objects are allowed as input.
+To get the best result, a minimum of three cell tower objects should be input > in accordance with one active and two latest historical cell info objects
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Geolocation API
+
+
+POST
+/search/places/geo-location
+Geolocation API
+
+
+Geocode API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+Geocoding API converts real addresses into these geographic reference positions to be placed on a map, be it for any street, area, postal code, POI or a house number etc.
+
+Geocode API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Geocode API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Geocode API
+
+
+GET
+/search/address/geocode
+Geocode API
+
+
+Reverse Geocode API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+Reverse Geocode API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Reverse Geocode API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Reverse Geocode API
+
+
+GET
+/search/address/rev-geocode
+Reverse Geocode API
+
+Nearby API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+Nearby Places API, enables you to add discovery and search of nearby POIs by searching for a generic keyword used to describe a category of places or via the unique code assigned to that category.
+
+Nearby API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Nearby API
+
+
+GET
+/api/places/nearby/json
+Nearby API
+
+
+eLoc API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+MapmyIndia eloc is a simple, standardized and precise pan-India digital address system. Every location has been assigned a unique digital address or an eLoc. The eLoc API can be used to extract the details of a place with the help of its eLoc i.e. a 6 digit code or a place_id.
+
+Place Detail API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://place.mappls.com - Live Prod server for Place Detail API
+Authorize
+Place Detail API
+
+
+GET
+/apis/O2O/entity/{eLoc}
+Place Detail API
+
+
+Text Search API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+Nearby Places API, enables you to add discovery and search of nearby POIs by searching for a generic keyword used to describe a category of places or via the unique code assigned to that category.
+
+Text Search API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Text Search API
+
+
+GET
+/api/places/textsearch/json
+Text Search API
+
+
+Address Standardization API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+Address Standardization API is a process to convert the non formatted address into the user readable format by omitting unnecessary information in the address. MapmyIndia address standardization API provides real addresses along with admin and other information.
+
+Address Analytics API
+ 1.0.0 
+OAS3
+(erstwhile Address Standardization API)
+
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs/Parameters are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+Address Analytics API
+
+
+GET
+/search/address/addressAnalytics
+Address Analytics API
+
+
+Elevation API
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications.
+
+We at MapmyIndia engineer rigorously tested routing algorithms for safe and efficient journeys that incorporate anticipated real time traffic updates for the most optimal and energy efficient routes.
+
+The Elevation API provides elevation data above the sea level for location on Earth’s surface. The Elevation API allows you to retrieve sampled elevation data along a path. This API can be useful for biking, trucking & in other routing applications..
+
+Elevation API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://tile.mappls.com - Live Prod server for Elevation API
+Authorize
+Elevation API
+
+
+GET
+/map/bhuvan_imagery/elevation
+Elevation API
+
+
+
+POI Along the Route API
+MapmyIndia Search APIs unleash the full potential of MapmyIndia Maps to provide users with ultimate location discoverability experience. It helps users explore our comprehensive & accurate map with over 50 million places mapped for India & its neighbouring nations.
+
+With POI Along the Route API user will be able to get the details of POIs of a particular category along his set route. The main focus of this API is to provide convenience to the user and help him in locating the place of his interest on his set route.
+
+POI Along the Route API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://search.mappls.com - Live Prod server for APIs
+Authorize
+POI Along the Route API
+
+
+POST
+/search/places/along-route
+POI Along the Route API
+
+
+
+Routing API for Passenger Vehicles
+MapmyIndia Routing API for Passenger Vehicles (Cars, 4-wheelers/ 4W) incorporates anticipated, real time traffic updates to return the most optimal driving route, by time and by safety, and displays it on a map.
+
+This REST API calculates driving routes between specified locations including via points based on route calculation type (optimal or shortest).
+
+Routing API for Passenger Vehicles
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Routing API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Routing APIs
+Authorize
+Routing API with Driving Profile
+
+
+GET
+/route/direction/{resources}/driving/{geopositions}
+Routing API with driving profile
+
+
+Routing API for Two Wheelers
+MapmyIndia Routing API for Passenger Vehicles (Cars, 4-wheelers/ 4W) incorporates anticipated, real time traffic updates to return the most optimal driving route, by time and by safety, and displays it on a map.
+
+This REST API calculates driving routes between specified locations including via points based on route calculation type (optimal or shortest).
+
+Routing API for Two Wheelers
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Routing APIs
+Authorize
+Routing API with Biking Profile
+
+
+GET
+/route/direction/{resources}/biking/{geopositions}
+Routing API with biking profile
+
+
+
+Routing API for Heavy Vehicles
+MapmyIndia Routing API for Heavy Vehicles (Buses, Trucks, Containers/ Long haul logistics) incorporates anticipated, real time traffic updates to return the most optimal driving route, by time and by safety, and displays it on a map.
+
+This REST API calculates driving routes (trucking routes) between specified locations including via points based on route calculation type (optimal or shortest).
+
+Routing API for Heavy Vehicles
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Routing APIs
+Authorize
+Routing API with Trucking Profile
+
+
+GET
+/route/direction/{resources}/trucking/{geopositions}
+Routing API with trucking profile
+
+
+Routing API for Pedestrians
+MapmyIndia Routing API for Pedestrians (Walking) returns the most optimal walking route, by time and by safety, and displays it on a map.
+
+This REST API calculates walking routes between specified locations including via points based on route calculation type (optimal or shortest).
+
+Routing API for Pedestrians
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Routing APIs
+Authorize
+Routing API with Walking Profile
+
+
+GET
+/route/direction/{resources}/walking/{geopositions}
+Routing API with walking profile
+
+
+
+Distance Matrix APIs
+Unlock the power of location intelligence for complex routing problems.
+
+We at MapmyIndia engineer rigorously tested routing algorithms for safe and efficient journeys that incorporate anticipated real time traffic updates for the most optimal and energy efficient routes.
+
+This REST API computes the distance and durations in a matrix of routes between a set of source/primary positions (geographical coordinates) and a set of all supplied secondary positions.
+
+Please note that maximum number of points are limited to 100 only including source and secondary positions.
+
+Distance Matrix APIs
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Distance Matrix API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com/route/dm - Live Prod server for Distance Matrix APIs
+Authorize
+Distance Matrix APIs
+
+
+GET
+/{resources}/{profile}/{geopositions}
+Distance Matrix API
+
+
+Distance Matrix Predictive API
+Unlock the power of location intelligence for complex routing problems.
+
+We at MapmyIndia engineer rigorously tested routing algorithms for safe and efficient journeys that incorporate anticipated real time traffic updates for the most optimal and energy efficient routes.
+
+This API computes the distance and duration of a route between a source/primary position (geographical coordinates) and a list of all supplied secondary positions. Optionally one can input the dep_time parameter and get the distance and duration optimized for that part of the day of a week. Time based functionality is available for selected cities only
+
+Distance Matrix Predictive API
+ 2.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Distance Matrix Predictive API
+Authorize
+Distance Matrix Predictive API
+
+
+GET
+/routev2/dm/distance
+Distance Matrix Predictive ETA API
+
+
+
+Snap to Road API
+Unlock the power of location intelligence for complex routing problems.
+
+We at MapmyIndia engineer rigorously tested routing algorithms for safe and efficient journeys that incorporate anticipated real time traffic updates for the most optimal and energy efficient routes.
+
+Snap-To-Road API, snaps given GPS points to the road network in the most plausible way. Maximum number of points are limited to 100 only. Our USP is to take GPS points collected along a route and return a similar set of corrected & aligned data with the points matched to the road with our intelligent Snap To Road API.
+
+Snap to Road API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Snap to Road API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Snap to Road API
+Authorize
+Snap to Road API
+
+
+POST
+/route/movement/snapToRoad
+Snap to Road API
+
+
+Route Optimization API
+Unlock the power of location intelligence for complex routing problems.
+
+We at MapmyIndia engineer rigorously tested routing algorithms for safe and efficient journeys that incorporate anticipated real time traffic updates for the most optimal and energy efficient routes.
+
+Snap-To-Road API, snaps given GPS points to the road network in the most plausible way. Maximum number of points are limited to 100 only. Our USP is to take GPS points collected along a route and return a similar set of corrected & aligned data with the points matched to the road with our intelligent Snap To Road API.
+
+Route Optimization API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Global Coverage Now Available !
+Route Optimization API is Now Available for 238 countries across the world.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Routing APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls & it's API consumer.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for Route Optimization API
+Authorize
+Route Optimization API
+
+
+GET
+/route/optimization/{resources}/{profile}/{geopositions}
+Route Optimization API
+
+
+Driving Range Polygon API
+Driving range polygon API leverages the rich data set of actual street networks available with Mappls to compute reachable areas within a specified time interval or distance from a location and returns the reachable regions as contours, polygons or lines that you can display on a map.
+
+This API provides solution the problem of finding regions and places that are reachable within a pre-defined distance or time. For example, where all one can reach if one travels 20 km or travels for 45 minutes from an origin.
+
+Driving Range Polygon API
+ 1.0.0 
+OAS3
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app).
+
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+
+Note:
+The response listed in the below documentation is ONLY indicative of the overall capabilities of Mappls's Search APIs.
+Not all response parameters mentioned in the below documentation is assured to be present in all the use-cases. The response of any of the below search API is thus, dependent on the use-case agreed upon between Mappls (MapmyIndia) & it's API consumers.
+For any further clarifications on what all of the response structure is available for your use case, please contact your business relationship manager or contact Mappls API support.
+PREMIUM APIs are not available for evalulation on signup. To get access, please contact API Support.
+Terms of service
+Mappls API Support - Website
+Send email to Mappls API Support
+Mappls License Key Signup
+Servers
+
+https://route.mappls.com - Live Prod server for APIs
+Authorize
+Driving Range Polygon API
+
+
+GET
+/routev2/optimization/isopolygon
+Driving Range Polygon API
+
+
+
+
+WEB plugins
+Mappls Web Maps JS¶
+Explore the largest Mappls directory of APIs & SDKs for maps, routes and search.
+
+Our APIs, SDKs, and live updating map data available for 200+ countries & territories to give developer's tool to build better mapping, navigation, and search experiences across different platforms.
+
+This page will be continually enhanced to offer more insights and reference materials on how to best utilize our Vector Maps JS SDK for Web.
+
+You can get your api key to be used for access here: https://auth.mappls.com/console
+
+Table Of Content¶
+Mappls Web Maps JS
+Introduction
+Web Map Features
+Getting Access
+Authentication Object - access_token mandatory query parameter.
+Getting Started
+Understanding Map Methods, Events & Properties
+Adding the Map Script to your web page
+Map Methods, Events & Properties
+Markers
+Types of Markers
+Marker Implementation
+Marker Methods,Events & Properties
+Markers Quick Reference:
+View Sample Codes for Quick Reference
+Heat Map Overlays
+HeatMap Quick Reference
+Add Geojson layer
+Geojson Quick Reference
+KML Overlay
+Important Notes to remember
+Info Windows
+Types of Information windows
+Info Window Quick Reference
+Feature Classes
+Polylines
+Polyline Quick Reference - Check out our vast list of sample codes for different polylines styles.
+Polygons
+Polygon Quick Reference - Check out our vast list of sample codes for polygons.
+Circles
+Circle Quick Reference
+Set mappls style
+Version	Remarks	Author
+1.0	Initial Commit	Mappls API Team (PK)
+Introduction¶
+The Mappls Web Maps JavaScript SDK is a tool that enables the creation and customization of interactive maps for both India and the global context. Developed by Mappls (MapmyIndia) India's leading Map provider, this SDK is designed to produce mobile-friendly maps with a user-friendly interface and excellent performance. It consists of a set of classes and functions that allow developers to incorporate a wide range of map features into their web and mobile applications.
+
+Web Map Features¶
+Zoom: A map of India that can be panned or scrolled, allowing users to explore it in various levels of detail. The highest level of detail is achieved at a zoom level of 22, while the lowest level provides a global view at zoom level 1.
+Overlays: We recognize the significance of maps in businesses, and that's why, at Mappls, we offer pre-made overlays that can be easily integrated into your code, streamlining the process and reducing the need for repetitive code.
+Map Markers (Pushpins): You can pinpoint any location using the default map markers (pushpin) feature, and then you have the flexibility to customize its appearance to align with the unique style of your application. Check out the Plug-ins section for additional enhancements that can elevate your customization options.
+Info Windows (Pop-ups): When a user clicks on a pushpin, an information window automatically appears, allowing user to display location-specific content. You have the flexibility to customize its appearance and behavior to perfectly match your UI and enhance its appeal.
+Polylines: Connect any two points or even more with out of the box Mappls polylines dedicated to high customizability and performance to suit your use cases. Note: Have a look at the plug-ins we provide to make your polylines have an edge up and suit your use cases in a more integrated manner.
+Polygons: Show a region in spotlight with a polygon and show various localized data based on it.
+Circles: Circles are way of marking a territory without too much interaction by the user.You can draw a circle around a given location.
+Controls: We understand the different use cases a user can come accross with a map, so we provide the flexibility of control that can be turned off or on based on your requirement and override our controls outlook by providing your own styles or CSS so that you can move them or customize them completely. Controls include:
+Zoom Bar: (appears by default at the centre on the right side). Helps to provide zoom in and zoom out functionality to the map by default.
+Map Layer Control: Allows to change the map view from basic to hybrid and regional. Also allows to show traffic layer on map.
+Fullscreen Control: Allows to view a full screen map.
+Current Location Control: Scopes the Map to the viewer’s current location.**
+Note:The location settings must be turned on and must allow the site to fetch the location for this control to work.
+
+Please Note: Mappls(MapmyIndia) may extend and enhance functionality for its interactive map API in future, which will be documented in this section, and which will be available through the Mappls.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Getting Started¶
+Now that you’re all caught up with the features let’s get down right to them implementing and look at how can you integrate our interactive Map to your Website from scratch.
+
+Understanding Map Methods, Events & Properties¶
+Mappls Live Demo | CodePen Implementation
+
+The easiest way to start loading maps in a web page is with a “Hello World” sample code, you can download or view a working “Hello World” sample from the links for adding your first marker below.
+
+Adding the Map Script to your web page¶
+Follow the below steps to integrate Mappls interactive Maps into your existing code base or even a File -> New Project. - Declare application as HTML5: Define <!DOCTYPE html> on top of your HTML. - Integrate Interactive maps from Mappls into your browser application by simply including Mappls's interactive map API in your script source in the head section.
+
+      <script src="https://sdk.mappls.com/map/sdk/web?v=3.0&access_token=<Static Key>"></script>
+
+            
+            
+        
+**Important:**
+- Please ensure that you insert your *static key* in place of `<Static Key>`
+- *`v`*: This is the version. Please keep as the latest version: `3.0`.
+- *`layer`*: The type of map applicable for the project. The default is `vector`. Alternate value is `raster`.
+
+Please discuss with [apisupport@mappls.com](mailto:apisupport@mappls.com) for futher clarification and support.
+
+            
+            
+        
+Define style in the head section to load your CSS. CSS can be defined as per the developers requirement (Extenal, Internal and inline)
+        <style> html, body, #map1 {margin: 0;padding: 0;width: 100%;height: 100%;} </style>
+
+            
+            
+        
+Define a div object in the body tag of the HTML where you want the Mappls Map to show up.
+        <div id="map"></div>;
+
+            
+            
+        
+Initialize a Mappls Map by simply calling new Mappls.Map() in the JavaScript and passing it at the minimum, the div object in which you want the map populated. (All other parameters are optional.)
+        map = new mappls.Map('map', {center:{lat:28.612964,lng:77.229463} });
+
+            
+            
+        
+Map Methods, Events & Properties¶
+Map Properties
+Map Methods
+Map Events
+Markers¶
+Utilizing markers to pinpoint locations is a hassle-free approach. You have the option to use the markers we provide as the default choice, and if you wish to use your own custom markers, we've got that aspect covered as well.
+
+Types of Markers¶
+Stock Markers: The one you get out of the box using our Interactive Vector Maps SDK and you can select from a lot of choices.
+Custom Marker: In case you want to add your own markers, we’ve handled that for you as well.
+HTML Marker: In case you don’t want to add in an image you can use HTML to create a marker and then plot it on the map as well.
+For more details, please read article in Markers
+
+Marker Implementation¶
+Mappls Live Demo | Code Pen Implementation
+
+The easiest way to start loading maps with simple markers in a web page is with sample code given on the link above, you can download or view a working sample with your authorized access keys.
+
+Method to add marker on map
+
+mappls.Marker
+
+var marker = new mappls.Marker({
+    map: map,
+    position: {"lat": 28.519467,"lng":77.223150}
+    });
+
+            
+            
+        
+Marker Methods,Events & Properties¶
+You can fine-tune the map methods, events and properties we offer to align with your unique requirements and amplify the level of customization for your map layer. These functions serve as a handy resource for promptly addressing specific events or scenarios.
+
+Markers Quick Reference:¶
+Marker Properties
+Marker Methods
+
+Marker Events
+
+Multiple Marker with cluster
+
+GeoJSON Bulk Marker
+
+View Sample Codes for Quick Reference¶
+Single Marker
+
+Multiple Marker
+
+Advance Cluster Marker
+
+Bouncing Marker
+
+Cluster Marker
+
+Dragable Marker
+
+Marker Dropdown
+
+Marker Dropup
+
+Marker using HTML
+
+Linked Marker
+
+Marker with Custom Popup
+
+Marker with Popup
+
+Multiple Marker using GeoJSON
+
+Heat Map Overlays¶
+For details , please read article in Heatmap Overlays
+
+Mappls Live Demo | Code Pen Implementation
+
+HeatMap Quick Reference¶
+Heatmap on Click
+
+Heatmap on Overmouse
+
+HeatMap
+
+Heatmap Properties
+
+Add Geojson layer¶
+For details, please read article in GeoJSON
+
+Mappls Live Demo | Code Pen Implementation
+
+GeoJSON Supports marker, polyline and polygon addition and Style properties
+
+Marker Property support in geojson
+
+description
+icon
+icon-size
+icon-offset
+text
+text-size
+text-offset
+Polyline Property support in geojson:
+
+stroke
+stroke-opacity
+stroke-width
+Polygon Property support in geojson:
+
+stroke
+fill color
+fill opacity
+    new mappls.addGeoJson({map:map,data:geoData,fitbounds:true,cType:0});
+
+            
+            
+        
+Geojson Quick Reference¶
+Add GeoJSON
+
+Dashed Polyline Using GeoJson
+
+Multi Colored Dashed Polyline Using GeoJson
+
+Multiple Marker Using Geojson
+
+Add GeoJSON Properties
+
+Remove Layer Method
+
+    new mappls.remove({map:map,layer:jsonData});
+
+            
+            
+        
+KML Overlay¶
+KML: Keyhole Markup Language is a file format employed to showcase geographical data on maps. With this plugin, you have the capability to superimpose KML data onto Mappls Maps for web applications.
+
+Mappls Live Demo | Code Pen Implementation
+
+Important Notes to remember¶
+Only KML data supported.
+KML file must have absolute path or raw KML string (in variable or in textbox)
+All internal URL's path must be absolute. (for icon path etc)
+File must not be password protected.
+File must be CORS enabled from the server where they are hosted.
+File must follow KML standard strictly.
+
+KML Method
+
+    var url="https://www.mappls.com/api/advanced-maps/doc/sample/mmi.kml";
+    Mappls.KmlLayer({map:map,url:url,cType:1,fitbounds:true,fitboundOptions:{padding:200}});
+
+            
+            
+        
+KML Properties: #KML-Properties
+For details, please read article in KML Overlay
+
+Info Windows¶
+Mappls Live Demo | Code Pen Implementation
+
+Info Windows provide a user-friendly method for displaying information related to a marker, essentially explaining the purpose of that marker. When users encounter a marker, their natural instinct is to click on it to discover more details, and presenting an info window is the ideal approach to fulfill this expectation.
+
+Please Note: Our JS supports a default info window that you can leverage but we want you to have an option to customize your info window to fit in with your UI and you can do so by manipulating the CSS.
+
+For a quick sample or a demo you can follow up with the links on live Demo
+
+For more details , please read article in Info Windows
+
+Types of Information windows¶
+Simple InfoWindow
+
+Custom InfoWindow
+
+InfoWindow with Header
+
+Info Window Quick Reference¶
+Info Window Properties
+
+Remove Info Window
+
+Feature Classes¶
+Polylines¶
+Mappls Live Demo | Code Pen Implementation
+
+Polylines are a means of visualizing movement or routes on a map, and at Mappls, we recognize the various ways you can make use of a map's capabilities, with Polylines being one of them.
+
+Polylines are essentially uninterrupted lines formed by one or more line segments, preferably represented as a geopath. To include a polyline, follow the initial map setup as described in the earlier sections, and then establish a dataset. What exactly is a dataset? It's the assembly of points (latitude and longitude coordinates) that defines the path along which you wish the polyline to be depicted.
+
+For details , please read article in Polylines
+
+Polyline Quick Reference - Check out our vast list of sample codes for different polylines styles.¶
+Polyline¶
+Animated Polyline¶
+Animated Marker with Polyline¶
+Bezier Curve Dashed Polyline¶
+Bezier Curve Polyline¶
+Dashed Polyline¶
+Editable Polyline¶
+Gradient Polyline¶
+Multi Colored Dashed Polyline¶
+Multi Colored Polyline¶
+Remove Polyline Method in JS
+
+    mappls.remove({map: map, layer: polyline);
+
+            
+            
+        
+In real case scenarios, you’ll need to get the data set on the fly or from a service and then you can leverage the events and functions we’ve learnt about how to plot the polyline. You also might need to beautify your polyline or add transitions for your UI to look marvelous.
+
+The polyline is just the beginning, but sometimes you’ll need to mark a territory to properly showcase your information. In such cases a polyline might not be the perfect fit but Polygons and Circles may be the apt choice.
+
+Polygons¶
+Polygons are a way of showing a territory. In cases where you want to showcase data over an area, polygons are your best pick. You can use them to show Geozones as well.
+
+It’s very like generating a polyline, the basic steps remain the same, create a Data set, generate a polygon and add it to the map.
+
+For details , please read article in Polygon
+
+Polygon Quick Reference - Check out our vast list of sample codes for polygons.¶
+Simple Polygon¶
+Polygon Properties¶
+Polygon Events¶
+Editable Polygon¶
+Polygon with Popup¶
+Transparent Polygon¶
+Check Position In Polygon¶
+Circles¶
+Mappls Live Demo | Code Pen Implementation
+
+Circles are a method for designating an area on a map with minimal user interaction. A circle is characterized by just two key attributes:
+
+The central point of the circle, specified by its latitude and longitude coordinates.
+The radius of the circle.
+With these two values, you can effortlessly outline a specific region of interest on a map.
+
+For more details , please read article in Circle
+
+    mappls.Circle()
+
+            
+            
+        
+Circle Quick Reference¶
+Simple Circle¶
+Transparent Circle¶
+Circle Properties¶
+Circle Events¶
+Set mappls style¶
+Mappls provides various pre-defined map styles for rendering purposes. Users can access a list of styles associated with their particular account. The listing API allows for both displaying a specific style and enabling the switching of style themes. For more comprehensive information, please refer to doc for MapStyles
+
+Directions Plugin for Mappls Web Maps¶
+Easy To Integrate Routing APIs & Map SDKs For Web Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Direction Plugin. See Sample Codes here
+
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Introduction to Directions Plugin¶
+This plugin, offered by Mappls Plugins for Web, uses integrated places searches for directions for several modes of transportation, including driving, biking and walking.
+
+The plugin offers the following basic functionalities:
+
+Integrated support of Mappls(MapmyIndia) Place search for searching locations of origin, destinations and via points.
+It allows to use origin and destinations in Mappls's digital address (semicolon separated) eLoc or WGS 84 geographical coordinates both.
+The ability to set the vehicle profile like driving, biking,trucking and walking.
+Easily set the resource for traffic and ETA information.
+For details, please contact apisupport@mappls.com.
+
+Sample Implementation¶
+The quickest way to integrate is to copy the plug-n-play sample code snippets into your code.
+
+Let the fun begin !
+
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+For detailed understanding of the plugin, Let’s get started!
+
+Plugin's configurations¶
+Adding the Directions plugin in the script
+
+Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=direction"></script>
+
+            
+            
+        
+Method¶
+mappls.direction()
+
+Properties¶
+Mandatory¶
+map(object): vector map or raster map object from respective Mappls Map SDKs.
+Example¶
+mappls.direction({map:map,start:"28.545,77.545",end:{label:'India Gate, Delhi',geoposition:"1T182A"}});
+
+            
+            
+        
+Optional Parameters¶
+start (string): Mappls Pin(Eloc) or lat,long.
+end (string): Mappls Pin(Eloc) or lat,long.
+resource (string): Default is route_adv and can be changed to route_eta or route_traffic as per requirement.
+profile (string): Default driving for four wheelers and can be changed to biking and trucking for two wheelers and heavy vehicles respectively.
+rtype (boolean): type of route required for navigation, where values mean:
+0: optimal (default)
+1: shortest (it will calculate route by excluding access penalties like private roads, etc.)
+bearings(integer): Limits the search to segments with given bearing in degrees. The referencing will be to the true north and in clockwise direction. (shall be part of premium offering)
+alternatives: Search for alternative routes. Passing a number: e.g. alternatives=n searches for up to n alternative routes. Please note that even if alternative routes are requested, a result cannot be guaranteed.
+radiuses: Limits the search to given radius in meters. For all way-points including start and end points. {radius};{radius}[;{radius} ...]. (shall be part of premium offering).
+steps(boolean): Return route steps for each route leg. Possible values are true/false. By default it will be used as true.
+stepPopup: Possible values are true/false //By default false. If set true, steps written in popups will be shown.
+stepIcon: Possible values are true/false //By default true. If set true, step icon will be visible.
+exclude(string): Additive list of road classes to avoid, order does not matter. Possible values are toll, motorway & ferry. Multiple values can be selected.
+start_icon (string): To set the icon for start point.
+Example:
+        start_icon: {
+            url: '2.png',
+            width: 30, //optional
+            height: 40 //optional
+        }
+
+            
+            
+        
+    OR
+
+            
+            
+        
+         start_icon: {
+            html: " < div > < img src = 'pin.png' > < /div>",
+            width: 30, //optional
+            height: 40, //optional
+            offset:[20,40] //optional
+
+        }
+
+            
+            
+        
+end icon (string) : To set the icon for end point.
+iconPopup : Possible values are true/false. Sets popup for start, via and end icons. //By default true.
+via: (object) : To add a geo positions between start and end points.
+Example: For single via Point
+        via: {
+            label: 'mathura', //optional
+            geoposition: "28.544, 77.4541"
+        }
+
+            
+            
+        
+- Example: For multiple via Points, user must pass the via points as array
+
+            
+            
+        
+        via:
+        [
+            {
+                label:'mathura',
+                geoposition:"28.544,77.4541"
+            },
+            {
+                label:'Koshi',
+                geoposition:"28.144,77.4541"}],
+
+            
+            
+        
+via_icon (object): To set the icon for via points,
+Example:
+        via_icon:
+        {
+            url:'1.png',
+            width:20,
+            height:40
+        }
+
+            
+            
+        
+    OR
+
+            
+            
+        
+        via_icon:
+        {
+            html: <div> <img src = 'pin.png' > 1</div>, 
+            width: 20,
+            height: 40
+        }
+
+            
+            
+        
+fitbounds: (boolean). Used to fit the route to in map view bound. Default is true.
+search : Referred to the intergarated Mappls Search. Default remains true.
+divId: The HTML where developer wishes results to be displayed.
+divWidth: (in pixels) For customizing or improving results display UI.
+autoSubmit : Property that will be called when user directly want to display the results. Default remains true.
+geolocation: boolean value used to enable or disable current location selection . Default is true.
+maxVia: Property that helps to limit the number of viapoints in any route. maximum Value up to 98.
+searchChars : number of characters required to start search. ie searchChars:2
+pod: Place type which you want to restrict the results by. e.g. pod:'city'. Valid values are:
+SLC (sub locality)
+LC (locality)
+CITY
+VLG (village)
+SDIST (sub district)
+DIST (district)
+STATE
+SSLC (sub sub locality)
+POI (place of interest)
+distance: boolean value used to show aerial distance from location passed in location. of the searched place in results listing e.g. distance:true
+hyperLocal: This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however they will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
+location: location coordinates which will be used as radial bias search (not restriction; only BIAS). e.g. location:[28.61, 77.23]
+routeColor : To configure the route colors displayed on the map. The colors will be applied in order of the route suggested. Will accept rgb, Hex code as well as color names.For Eg: If only one color is suggested then the most prior route color would be changed and rest routes will be shown in default colors. User can configure as many colors as per suggestions.
+strokeWidth : To assign width of the route.The width will be applied in order of the route suggested. Default value is 4.For Eg: If only one width is suggested then the most prior route width would be changed and rest routes will be shown in default width. User can configure as many widths as per suggestions.
+borderColor : To assign color to the outline of the route.The colors will be applied in order of the route suggested. Will accept rgb, Hex code as well as color names.For Eg: If only one color is suggested then the most prior route color would be changed and rest routes will be shown in default color. User can configure as many colors as per suggestions.
+activeColor : To configure the color of Active Route. Please note If routeColor is assigned then activeColor will hide the first suggested route.Will accept rgb, Hex code as well as color names.
+activeStrokeWidth : To assign width of the route. Default value is 7.
+callback: (function). To get callback data after route plotted.
+routeIndex: (function) - To get the route index number and route name(if present).
+collapse : To minimise the entire direction plugin in left direction. Available only for Top left position. Default is false. This parameter is also available in form of method in callback function. Refer below to use the function
+       collapse:function(data){console.log(data);},
+
+            
+            
+        
+connector : To show the connecting line with start and end location with the route. Default is false.
+Additional Parameter - alongTheRoute¶
+alongTheRoute : true/false. Default is false.
+
+To access this parameter , please contact API Support This parameter takes the encoded route along which POIs will be searched.
+
+This parameter is further having many configurable options listed below.
+
+buffer: 200, // Buffer of the road. Minimum value is 25m, maximum is 1000m and default is 25m
+sort: false, //default is true
+category:
+
+catCode: 'FINATM', //The POI category code to be searched. Only one category input supported by default
+icon: "icon image path " //absolute path of the desired image
+width: '30px' //width of the icon image
+height: '30px' //height of the icon image
+label: 'Restaurants' the name user puts to show the category. For Eg: "Restaurants"
+page: 1, // Used for pagination, Default is 1
+
+poicallback: to get data of alongtheroute pois.
+
+If the user does not want to use the UI - PoiAlong the route , then he can use below additional paremeters to get the API response with other parameters of direction Plugin.
+
+catCode :'FINATM', to define the catagory for result
+poicallback: function (data)
+Refer to the Code Snippet if the you need to configure the default options.
+
+    alongTheRoute: 
+        {
+            options: 
+                {
+                    "page": 1,
+                    "buffer": 1000,
+                    "sort": false
+                },
+            category: 
+                [
+                    { 
+                        catCode: 'FINATM', 
+                        icon: "custom icon url", 
+                        width: '30px', 
+                        height: '30px',
+                        label:'ATM'
+                    },
+                    { 
+                        catCode: 'HOTALL', 
+                        icon: "custom icon url", 
+                        width: '30px', 
+                        height: '30px',
+                        label:'Hotels'
+                    }
+                ],
+            poicallback: function(data)
+                { 
+                    console.log(data);
+                }
+        }
+
+            
+            
+        
+*Advisory - Route length should not be more than 30 kms long for optimal behaviour
+
+Additional Parameter - routeSummary¶
+routeSummary : true/false. Default is false. This feature allows to show the events reports along the route like road and safety, traffic conditions etc.
+To access this parameter , please contact API Support.
+Refer to the Code Snippet if the you need to get the callback.
+
+    routeSummary:
+        {
+            summarycallback: function(data)
+                {
+                    console.log(data);
+                }
+        },
+
+            
+            
+        
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+
+getDistance Method for Mappls Web Maps¶
+Easy To Integrate Distance Matrix APIs & Map SDKs For Web Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Distance Method.
+
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+This method, offered by Mappls web plugins , computes the routable distance and duration between a set of source/primary positions and a list of all supplied secondary positions using two mode of route calculation i.e. optimal OR shortest. The method also takes into account different modes of transport like 4 wheelers, two wheelers + more. Please note that maximum number of points are limited to 100 only including source and secondary positions.
+
+The method offers the following basic functionalities: 1. The method computes the distance and duration from origin to number of supplied destinations on maps. 2. The ability to set the vehicle profile like driving, biking and trucking. 3. Easily set the resource for traffic and ETA information. 4. The method also has 'many to many' functionality in case of multiple origins and destinations. 5. It allows to use origin and destinations in Mappls's digital address (semicolon separated) eLoc or WGS 84 geographical coordinates both. 6. This method can only be used when CORS is enabled on your project. For details, please contact apisupport@mappls.com.
+
+For detailed understanding, Let’s get started!
+
+Live Demo¶
+Visit the following link for visiting the live demo:
+
+LIVE DEMO
+
+Implementation¶
+Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?v=3.0&access_token=<Static Key>"></script>
+
+            
+            
+        
+Method¶
+mappls.getDistance()
+
+Properties¶
+Mandatory¶
+coordinates (string): Semicolon separated eloc or lat,long or both.
+callback: Method to get response
+Optional¶
+resource (string): Default is distance_matrix and can be changed to distance_matrix_eta or distance_matrix_traffic as per requirement.
+profile (string): Default driving for four wheelers and can be changed to biking and trucking for two wheelers and heavy vehicles respectively.
+rtype (boolean): type of route required for navigation, where values mean:
+
+0 optimal (default)
+1 shortest (it will calculate route by excluding access penalties like private roads, etc.)
+region (string): It is for the available countries. Default is India; for other countries (Sri Lanka, Nepal, Bangladesh & Bhutan) this parameter is mandatory. Possible values are ind (for India, default), lka (for Sri Lanka) , npl (for Nepal) , bgd (for Bangladesh), mmr (for Myanmar) and btn (for Bhutan).
+
+sources (string): To specify which of the coordinates/eLoc supplied are to be treated as source position for 'many to many' distance matrix calculation. The input is indicative of that coordinate/eLoc's index. E.g. 0;1 means that 0th and 1st pairs are source points. Default value is 0. The indexes must be semi-colon separated. e.g: 0;1;2;...
+
+destinations (string): To specify which of the coordinates/eLoc supplied in the method are to be treated as destination position for 'many to many' distance matrix calculation. The input is indicative of that coordinate/eLoc's index. E.g. 2;3 means that 0th and 1st pairs are destination points. Default value is all. The indexes must be comma separated. e.g: 3;4;5;...
+Example¶
+mappls.getDistance({
+    coordinates: "mmi000;123zrr",
+    callback: function(data) {
+        console.log(data);
+    }
+});
+
+            
+            
+        
+Sample code Snippet¶
+/*CALLING DISTANCE*/
+mappls.getDistance({
+    coordinates: "518NSV;123ZRR;28.9797,77.6763"
+}, function(data) {
+    resdiv.innerHTML = JSON.stringify(data).replace(/{/g, '{').replace(/}/g, '}').replace(/","/g, '","');
+});
+
+            
+            
+        
+IMPORTANT Note: CORS must be enabled on your credentials before accessing this method. Please contact API support (below) for enabling the same on your credentials or go to API console to enable.
+
+That's All !
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+Marker Plugin for Mappls Web Maps¶
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Marker Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Getting Access¶
+Before using the Plugin in the your solution, please ensure that the related access is enabled in the Mappls Console, in the same project you set up for the Maps SDK.
+
+Copy and paste the generated access token from your API keys available in the dashboard in the sample code for interactive map development.
+This APIs follow OAuth2 based security.
+Access Token can be generated using Mappls Portal
+Introduction¶
+A simple plugin to render places on map as markers. The Marker plugin for Mappls Web Maps JS library is provided as a means to enable rendering of searched Places via eLoc as markers top of Mappls Maps.
+
+The plugin can be used in combination with our Interactive Map JS libraries.
+
+The SDK offers the following basic functionalities: 1. Ability to render places directly using eLoc on Mappls Maps SDK. 2. A Mappls.elocMarker() method to initiate rendering of Places on the map specified with eLoc(s) on the map. 3. Ability to add listeners on marker events, remove markers, customize icons and get fitbounds of the markers. 4. Ability to make markers draggable and add annotations (info popups + customizable popups).
+
+Live Demo¶
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+The above implementation uses Mappls Interactive Map JS library as map rendering framework showcasing integration of marker plugin.
+
+Implementation¶
+Adding the Marker plugin script¶
+Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0"></script>
+
+            
+            
+        
+1. Initializing the Marker plugin¶
+Method¶
+mappls.pinMarker()
+
+/*marker plugin initialization*/
+var markerOptions={
+    map:map,
+    pin:[‘mmi000’,’123zrr’],
+    popupHtml:[“<h1>MMI</h1>”,”<h1>Agra</h1>”],
+    html:[“1”,”2”],
+    icon:{url:’2.png’,width:30,height:45}
+}
+
+mappls.pinMarker(markerOptions,callback);
+
+            
+            
+        
+OR
+
+mappls.pinMarker({map:map,pin:'mmi000',popupHtml="<h1>MMI</h1>"});
+
+            
+            
+        
+Mandatory Parameters¶
+map: object > vector map or raster map object from respective Mappls Map JS.
+pin: array of strings containing the eLoc(s) which need to be showcased on the map. e.g.
+    [‘mmi000’,’123zrrr’]
+
+            
+            
+        
+Optional Parameters¶
+html: (string or html) Text which needs to be written over the marker or if there is a need for further customization, then this param can also take in HTML div. e.g.
+    'mappls'
+
+            
+            
+        
+OR
+
+            
+            
+        
+    [“<b>MMI</b>”,”<b>AGRA</b>”]
+
+            
+            
+        
+popupHtml: (string or HTML) What needs to be displayed when marker is clicked. e.g.
+    [“<h1>Mappls</h1>”,”<p>Agra</p>”]
+
+            
+            
+        
+popupOptions: (object) if the popup/annotation needs to be customized further. The following are the sub-params for the object:
+className: the class name of the annotation object.
+offset: the offset positioning from the marker.
+openPopup: (boolean) indicating if the pop needs to be open on addition of marker or not as default. e.g.
+    {
+        className:'myClass',
+        offset:{},
+        openPopup:true //open popup as default with add marker
+     }
+
+            
+            
+        
+icon: (object) the customized marker icon options. The following are the sub-params for the object:
+
+url: the URL specifying the marker image.
+width: width of the marker icon.
+height: height of the marker icon.
+offset: offset positioning of the marker's anchor.
+popupAnchor: positioning of the marker popup's anchor.
+e.g.
+
+    {
+        url:'https://apis.mappls.com/map_v3/2.png',
+        width:30,
+        height:40,
+        offset:[20,40],
+        popupAnchor:[-5,-40]
+    }
+
+            
+            
+        
+draggable: (boolean) to set the marker(s) as draggable or not.
+2. Method for getting all markers to fit in a viewbound¶
+Method¶
+fitbounds()
+
+obj.fitbounds(options); //options are optional e.g. {padding:100}
+
+            
+            
+        
+padding: option can be used to setup a padding around the viewbound to fit the markers in.
+3. Method for removing markers with callback¶
+Method¶
+remove()
+
+obj.remove();
+
+            
+            
+        
+4. Method for adding event listeners on the marker¶
+Method¶
+addListener()
+
+obj.addListener(event,callback);
+
+            
+            
+        
+Example:
+
+obj.addListener(‘click’,function(data){console.log(data);});
+
+            
+            
+        
+5. Method for removing event listeners on the marker¶
+Method¶
+removeListener()
+
+obj.removeListener(event);
+
+            
+            
+        
+Example:
+
+obj.removeListener(‘click’);
+
+            
+            
+        
+6. Method for setting icons for markers¶
+Method¶
+setIcon()
+
+obj.setIcon(‘url.png’); //replaces all marker's icon.
+
+            
+            
+        
+OR
+
+obj.setIcon(‘url.png’,’mmi000’); //replaces single marker's icon for the provided eLoc.
+
+
+            
+            
+        
+7. Method for setting pophtml for markers¶
+Method¶
+setPopup()
+
+obj.setPopup({content:"<h1>Mappls</h1>"}); //replaces all marker's pop up values.
+
+            
+            
+        
+OR
+
+obj.setPopup({content:"<h1>Agra</h1>",pin:'123zrr'}); //replaces single marker's popup value for the provided Pin.
+
+            
+            
+        
+That's All ! Visit the samples for assistance to create a sample implementation with your own keys.
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+
+Nearby Search Plugin for Mappls Web Maps¶
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Nearby Search Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Getting Access¶
+Before using the Plugin in the your solution, please ensure that the related access is enabled in the Mappls Console, in the same project you set up for the Maps SDK.
+
+Copy and paste the generated access token from your API keys available in the dashboard in the sample code for interactive map development.
+This APIs follow OAuth2 based security.
+Access Token can be generated using Mappls Portal
+Introduction¶
+A simple plugin / widget to search for nearby places powered by the best online maps from Mappls. The Nearby Search plugin for Mappls Web Map JS library is provided as a means to enable radially searching for Nearby Places on Mappls Maps.
+
+The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web app implementation. Thus it enables developers to include Mappls web JS in their own customized solutions easily.
+
+The SDK offers the following basic functionalities: 1. Ability to search for nearby places directly with or without Mappls Maps visual interface. 2. A Mappls.nearby() method to initiate nearby search across all categories of places available on Mappls. 3. Ability to get information from Mappls Place Search plugin through a callback 4. Include the Nearby Search Plugin with or without an interactive Map component.
+
+Sample Implementation¶
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+For detailed understanding of the plugin, Let’s get started!
+
+Plugin's Configurations¶
+Adding the Nearby Search plugin in the script
+
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=nearby"></script>
+
+            
+            
+        
+1. Initializing the Nearby Search plugin¶
+Method¶
+mappls.nearby()
+
+/*Nearby plugin initialization*/
+var options = {
+  divId: 'nearby_search',
+  map: map,
+  keywords: 'atm',
+  refLocation: [28.632735, 77.219696],
+  fitbounds: true,
+  geolocation: true,
+  click_callback: function(d) {
+    alert(d);
+  }
+}
+
+mappls.nearby(options, callback);
+
+            
+            
+        
+Mandatory Parameters¶
+keywords: The string or JSON object which will be passed as input query to the search engine. Examples
+As a string: keywords:"atm". This parameter supports input in Hindi Language keywords:"चाय". To get the feature contact apisupport@mapmyindia.com.
+As a JSON object: keywords:{'FINATM':'ATMS','FODCOF':'Restaurants'}. This parameter supports input in Hindi Language keywords:{'एचडीएफसी ':'एटीएम'}. To get the feature contact apisupport@mapmyindia.com. This mechanism is used to display a selection of POI categories on a UI. If keywords parameter is used, then refLocation input also becomes mandatory.
+callback: (method): results will be returned in this method if specified.
+OR
+
+hyperLink: This is the URL received from Mappls Place Search plugin for bridged Nearby Search. i.e. A Nearby Search trigerred directly from the Place Search Plugin.
+Optional Parameters¶
+refLocation: location coordinates which will be used as centroid of the radial search reference . e.g. refLocation:[28.61, 77.23] OR refLocation:[28.61, 77.23]
+map: A map object from our Maps SDK. Markers can also be passed here that will be displayed on map. Custom icons also can be passed here.
+divId: The HTML where developer wishes results to be displayed. Example: divId:document.getElementbyId('Nrdiv');
+divHeight: (in pixels) for customizing or improving results display UI.
+icon: (object) To set the icons of the resulting categories of results.
+Single Category: Example:
+        icon: {
+            url: '2.png'
+        }
+
+            
+            
+        
+    OR
+
+            
+            
+        
+         icon: {
+            html: " < div > < img src = 'pin.png' > < /div>",
+            width: 30,
+            height: 40
+        }
+
+            
+            
+        
+- *Multiple Category*: Example:
+
+            
+            
+        
+        icon: {
+            'FINATM': {
+                url: 'atm.png',
+                height: 40,
+                width: 30
+            },
+            'FODCOF': {
+                url: 'food.png',
+                height: 40,
+                width: 32
+            }
+        }
+
+            
+            
+        
+    Optional parameters for icon configuration are as follows:
+    - `offset`: Example: `offset:[20,40]`
+    - `popupAnchor`: Example: `popupAnchor:[-10,20]`
+
+            
+            
+        
+popup: (boolean) Default is true if map is used. Used to bind popup to markers.
+popupOptions: (object) Used to define pop up optional configuration. Example: popupOptions: {maxWidth:250}
+fitbounds: (boolean) Default is true. Used to fit all markers to in map view bound.
+geolocation: boolean value used to enable or disable current location selection . Default is true.
+radius: (number): Defines the radius of nearby search.
+bounds: (geographic bounds): Used to define the rectangular bounds within which nearby search will work.
+sortBy: (string)Used to sort the nearby search results.
+page: (number): to request another page of results if available.
+pod: (string): to filter to a certain type of results.
+searchChars : number of characters required to start search. e.g searchChars:2
+region : To specify the region for various api response.e.g region : "USA"
+callback_click: (method): a method that will be called when user clicks on any listing. The action returns the eLoc of the selected place.
+Types of Nearby Search Implementations¶
+1. Get data from category & coordinates¶
+Following is an example of calling mappls.nearby() method to get data from category and coordinates:
+
+var res=mappls.nearby({keywords:"atm",refLocation:"123ZRR"});
+
+            
+            
+        
+2. Get data from Mappls Search category url¶
+var res=mappls.nearby({hyperLink:'https://atlas.mappls.com/api/places/nearby/json?explain&richData&&refLocation=28.61,77.23&keywords=FINATM'});
+
+            
+            
+        
+3. Get data from category & location selection UI¶
+var res=mappls.nearby({divId:'nearby_divId',keywords:{'FINATM':'ATMs', 'FODCOF':'Restaurants'}});
+
+            
+            
+        
+This will place a selection of keywords and a location selection UI inside divId.
+
+Remove Nearby Markers within callback from Map¶
+Use remove() method to remove markers from map.
+
+var markers=res.markers();
+markers.remove();
+
+            
+            
+        
+Add Event to Markers¶
+Use addListener() method to associate events to markers.
+
+markers.addListener('click',function(data){ console.log(data);});
+
+            
+            
+        
+That's All ! Visit the samples for assistance to create a sample implementation with your own keys.
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+Place Details Plugin for Mappls Web Maps¶
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls PIN (eLoc) Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Introduction¶
+A simple plugin / widget to render details of a particular place. The Place Details plugin for MapmyIndia Web Map JS library is provided as a means to enable rendering of MapmyIndia Places on MapmyIndia Maps.
+
+The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web map implementation. Thus it enables developers to include MapmyIndia Places SDK in their own customized solutions easily.
+
+The SDK offers the following basic functionalities: 1. Ability to render places directly on map with reference to the provided eLoc(s). 2. A getPinDetails() method to fetch the details of a place. 3. Customizable markers 4. Remove markers from map.
+
+Sample Implementation¶
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+For detailed understanding, Let’s get started!
+
+Plugin's configurations¶
+Adding the Place Details plugin in the script
+
+1. Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=getPinDetails"></script>
+
+            
+            
+        
+2. Initializing the Place Details plugin¶
+Method¶
+Mappls.getPinDetails()
+
+Mappls.getPinDetails({ map: map, pin: '3F45CB'}, callback);
+
+            
+            
+        
+Mandatory Parameters¶
+getPinDetails: The pin (Mappls Pin/Eloc) whose details are required.
+callback: to return data to a specified callback method.
+Optional Parameters¶
+map: Map Object
+icon: custom icon url.
+divId: The div to put the result in.
+markerPopup (boolean): to show pop-ups on marker click. Default is true.(example: markerPopup:true)
+popupHtml: to show html pop up on marker click. User should define values to be shown while using this parameter.(example: obj.setPopup({content:"<h1>Hello MapmyIndia</h1>"}))
+fitbounds (boolean): To show all rendered eLoc(s) in a single view bound. (example: fitbounds:true)
+fitboundOptions : padding in fitbounds, if any. (Example: { padding:50,maxZoom:18})
+infoDiv (boolean): To render html div on map or not. Default is true. (example: infoDiv:true)
+click_callback: method to call on click of callback.
+3. Method to remove the markers with callback populated by Place Details Plugin¶
+pinObj.remove();
+
+            
+            
+        
+4. Method to set up the div content for populating details from getEloc() plugin¶
+pinObj.setDivContent(“Div html);
+
+            
+            
+        
+5. Method to set up the pop up content on marker as html.¶
+For Eg:
+
+pinObj.setPopup({content:"<h1>Hello Mappls</h1>"});
+
+            
+            
+        
+That's All ! Visit the samples for assistance to create a sample implementation with your own keys.
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+Place Picker Plugin for Mappls Web Maps¶
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Place Picker Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+A simple plugin / widget to pick places from the map. This SDK also has integrated Place Picker Plugin as optional component that enables one to narrow down to picked place by searching for it first and then changing the position of the resulting point on map to fine-tune the results.
+
+The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web app implementation. Thus it enables developers to include Mappls Places JS in their own customized solutions easily.
+
+The SDK offers the following basic functionalities: 1. Ability to pick or search places directly with or without Mappls Maps visual interface. 2. A mappls.placePicker() method to initiate the plugin and pick places from Mappls Maps. 3. Ability to get information from Mappls Place Picker plugin through a callback. 4. Include the Place Picker Plugin with or without an interactive Map component.
+
+Sample Implementation¶
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+For detailed understanding of the plugin, Let’s get started!
+
+Plugin's Configurations¶
+Adding the Nearby Search plugin in the script
+
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=placePicker"></script>
+
+            
+            
+        
+1. Initializing the Place Picker plugin¶
+Method¶
+mappls.placePicker()
+
+ /*Place Picker plugin initialization*/
+var options = {
+  map: map,
+  header: true,
+  closeBtn: true,
+  pinImage: "https://apis.mappls.com/map_v3/1.png",
+  snapToEntry: true, // default false
+  snappingRadius: 50, // default 50 --> (snappingRadius > 10 and snappingRadius < 200)
+  entryMarkerStyle: {
+    size: 10, // default 10
+    color: "blue", // default '#ff0000'
+    strokeWidth: 4, // default 2
+    strokeColor: "", // default '#ffffff'
+    /* fillColor: '00000',
+                     fillopacity: 1,
+                     lineColor: 'FFFFFF',
+                     linewidth: 5,
+                     lineopacity: 1, */
+
+  },
+};
+mappls.advancePlacePicker(options, callback);
+function callback(data) {
+  picker = data;
+  console.log(picker);
+  setTimeout(() => {
+    if (picker.data) {
+      /*  alert(picker.data.formatted_address); */
+    }
+  }, 700);
+}
+
+            
+            
+        
+Mandatory Parameters¶
+Place Options: any object containing any of the two following mandatory configurations values.
+map: object > vector map or raster map object from respective Mappls Map JS
+OR¶
+location: (lat,lng) object // to get data without map.
+callback: (method): to get data after location selection . If no callback method is specified, UI GET button will be hidden. In this case, the consuming app can get data by calling method getData().
+Optional Parameters¶
+Place Options: any object containing optional configurations for modifying the search request.
+location: location coordinates which will be used as radial bias (not restriction; only BIAS). e.g. location:[28.61, 77.23]
+geolocation: boolean value used to enable or disable current location selection . Default is true.
+closeBtn: (boolean): to give the option to close Place Picker (including hiding the top bar that has search & lower bar area that has the 'Done' button and related sub-text). Default is true.
+closeBtn_callback: A callback method that is called when user clicks on the close button at the top left. To provide a call to action upon user closing the Place Picker plugin and thus providing the ability to continue towards further action by the consuming app.
+search: (boolean): To enable / disable the integrated Place Search plugin. Default is true.
+topText: The banner text to show at the top as title of the Place Picker plugin. Default is Place Picker.
+pinImage: (URL) The PIN icon on the map.
+pinHeight: (number). To adjust the placement of the PIN icon on the map.
+searchChars : number of characters required to start search. e.g searchChars:2
+region : To specify the region for various api response.e.g region : "USA"
+snapToEntry : To snap to the entry point of the location. default value is false
+snappingRadius : To specify the snapping radius.
+entryMarkerStyle : To modify the entry marker style.
+size: 10, // default 10
+color: "blue", // default '#ff0000'
+strokeWidth: 4, // default 2
+strokeColor: "", // default '#ffffff'
+fillColor: '00000',
+fillopacity: 1,
+lineColor: 'FFFFFF',
+linewidth: 5,
+lineopacity: 1,
+2. Calling Mappls Place Picker for programmatically fixed text¶
+Following is an example of calling Mappls.placePicker() method programmatically for a fixed pair of coordinates rather than depending on a UI driven approach:
+
+/*CALL for coordinates - LIKE THIS*/
+mappls.placePicker({location:{lat:28.9898,lng:77.9898}},callback);
+
+            
+            
+        
+3. Method for removing place picker plugin with callback from map¶
+Method¶
+remove()
+
+obj.remove();
+
+            
+            
+        
+4. Method for programmatically setting location within callback on map.¶
+Method¶
+setLocation()
+
+obj.setLocation({lat:28.42424,lng:77.232323});
+
+            
+            
+        
+5. Method for getting location data from Place Picker plugin.¶
+Description¶
+This method is especially useful if no callback is given in options. As per the current status of the Place Picker plugin's UI (map view and placement of PIN on map), the location data is returned.
+
+Method¶
+getLocation()
+
+obj.getLocation();
+
+            
+            
+        
+Response Structure of Place Picker Data¶
+{   
+    area: "India", //country information
+    city: "New Delhi", // city of the pinned place.
+    district: "South East Delhi District", // district of the pinned place.
+    formatted_address: "Industrial Estate Phase 1, New Delhi, Delhi, India", // complete formatted address of the pinned place.
+    houseName: "Equalisatcon Pump House", // house name of the pinned place.
+    houseNumber: "", // house number of the pinned place.
+    lat: "28.5237002235929", // latitude of the pinned place as per input coordinates.
+    lng: "77.28024601936342", // longitude of the pinned place as per input coordinates.
+    locality: "Okhla Industrial Estate Phase 1", // locality number of the pinned place.
+    pincode: "110020", // PIN of the pinned place.
+    poi: "BSES", // POI reference for the pinned place.
+    poi_dist: "78", // Referenced POI's distance from the pinned place.
+    responsecode: 200, // Response code of the Place Plugin
+    state: "Delhi", // state of the pinned place.
+    street: "Unnamed Road", // Street reference for the pinned place.
+    street_dist: "16", // Referenced street's distance from the pinned place.
+    subDistrict: "Kalkaji", // subdistrict of the pinned place.
+    subLocality: "Block C", // sublocality of the pinned place.
+    subSubLocality: "", // subsublocality of the pinned place.
+    village: "" // village of the pinned place.
+}
+
+
+            
+            
+        
+That's All ! Visit the samples for assistance to create a sample implementation with your own keys.
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+Place Search Plugin for Mappls Web Maps¶
+Easy To Integrate Maps & Location APIs & SDKs For Web & Mobile Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for 200+ nations and territories accross the world.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Place Search Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+A simple plugin / widget to search for places powered by the best online maps from Mappls. The Place Search plugin for Mappls Web Map JS library is provided as a means to enable searching of Places on Mappls Maps.
+
+The plugin can be used in combination with our Interactive Map JS library but it also possesses the adaptability to be used as an independent plugin within any web app implementation. Thus it enables developers to include Mappls Places JS in their own customized solutions easily.
+
+The SDK offers the following basic functionalities: 1. Ability to search for places directly with or without Mappls Maps visual interface. 2. A mappls.search() method to initiate search across all types places available on Mappls. 3. Ability to get information from Mappls Place Search plugin through a callback 4. Include the Place Search Plugin with or without an interactive Map component.
+
+Sample Implementation¶
+Visit the samples for assistance to create a sample implementation with your own keys.
+
+For detailed understanding of the plugin, Let’s get started!
+
+Plugin's Configurations¶
+Adding the Nearby Search plugin in the script
+
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=search"></script>
+
+            
+            
+        
+1. Initializing the Place Search plugin¶
+Method¶
+mappls.search()
+
+/*Search plugin initialization*/
+var placeOptions=
+{
+    location:[28.61, 77.23]/*,
+    geolocation:true,
+    pod:'City',
+    bridge:true,
+    tokenizeAddress:true,*
+    filter:'cop:9QGXAM',
+    hyperLocal:true, Default is false. Location parameter is mandatory to use this parameter.
+    distance:true,
+    width:300,
+    height:300,
+    clearButton:false, //to hide cross button, which is right side of search input
+    blank_callback:function(){console.log("called when click on cross button or input value become blank");}
+    */
+};
+
+new mappls.search(document.getElementById("auto"),placeOptions,callback);
+
+            
+            
+        
+Mandatory Parameters¶
+inputQuery: The string which will be passed as input query to the search engine.
+Optional Parameters¶
+Place Options: Optional configurations for modifying the search request.
+location: location coordinates which will be used as radial bias (not restriction; only BIAS). e.g. location:[28.61, 77.23]
+pod: Place type which you want to restrict the results by. e.g. pod:'city'. Valid values are:
+SLC (sub locality)
+LC (locality)
+CITY
+VLG (village)
+SDIST (sub district)
+DIST (district)
+STATE
+SSLC (sub sub locality)
+filter: a parameter to restrict results by. e.g. filter:'cop:9qgxam'
+Can be used to filter results by PIN code. e.g. pin:110055
+Can be used to filter results by eLoc. e.g. cop:9qgxam
+Can be used to filter results by view bound. e.g. filter=bounds:28.598882,77.212407;28.467375,77.353513
+bridge: initiates a bridge to be created to provide applicable nearby API searches. Involves using Nearby Search Plugin in conjunction with Place Search Plugin.
+hyperLocal:This parameter lets the search give results that are hyper-localized to the reference location passed in the location parameter. This means that nearby results are given higher ranking than results far from the reference location. Highly prominent results will still appear in the search results, however theu will be lower in the list of results. This parameter will work ONLY in conjunction with the location parameter.
+tokenizeAddress: boolean value used to return address tokens from the searched places from Mappls Search APIs. e.g. tokenizeAddress:true
+distance: boolean value used to show aerial distance from location passed in location. of the searched place in results listing e.g. distance:true
+geolocation : boolean value used to enable or disable current location selection . Default is true.
+width: width of the suggested div. e.g. width:300
+height: height of the suggested div. e.g height:300
+clearButton : clear the value of input box. Default is true.
+callback: callback to get results/error after call or selection.
+blank_callback : callback when user clicks the cross button or erase the value of input box.
+searchChars : number of characters required to start search. e.g searchChars:2
+region : To specify the region for various api response.e.g region : "USA"
+2. Calling Mappls Place Search for programmatically fixed text¶
+Following is an example of calling Mappls.search() method programmatically for a fixed text rather than depending on a UI driven approach:
+
+/*CALL for fix text - LIKE THIS*/
+    new mappls.search("agra",placeOptions,callback);
+
+            
+            
+        
+Other Useful Methods¶
+setToken("token") - This method is used when you receive a callback of token error. To set new token following method should be refered.
+
+For Eg: if the users receives an error in callback like {error: "error-Passport invalid-Passport seems to be invalid or not active anymore-responsecode:401"}, use
+
+mappls.setToken();
+
+            
+            
+        
+If this returns true, then the token is placed successfuly, otherwise token is not valid.
+
+That's All !
+
+
+Mappls Route Events Summary Plugin¶
+Easy To Integrate Routing APIs & Map SDKs For Web Applications
+
+Powered with India's most comprehensive and robust mapping functionalities. Now Available for Srilanka, Nepal, Bhutan, Bangladesh and Myanmar.
+
+Copy and paste the JWT API key or generated Auth token from your API keys available in the dashboard (http://auth.mappls.com/console) in the sample code for interactive map development.
+The sample code is provided to help you understand the very basic functionality of MapmyIndia APIs.
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+This plugin, offered by Mappls plugins for Web, with the help Mappls Rest API response dependency, provide the route events for the selected route.
+
+This feature is also available inbuilt with Mappls Direction Plugin. For details, please contact apisupport@mapmyindia.com.
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Direction Plugin. See Sample Codes here
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Implementation¶
+Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=routesummary"></script>
+
+            
+            
+        
+Method¶
+mappls.routeSummary()
+
+Properties¶
+Mandatory Parameters¶
+map(object): vector map or raster map object from respective Mappls Map SDKs.
+routeId (String) : routeId, Provide routeId if users needs to get all routes reports summary.
+Optional Parameters¶
+Index (String) : routeIdx, Provide routeIdx if user needs routes reports for a selected route only Otherwise returns events for all suggested routes.
+
+nodeId (String) : nodeId, nodeId of the Route.
+
+categories (String) : Optional, categories (comma(,) separated String).
+
+isGroup (Integer) : sGroup, Set to 1, if user needs parentCategory wise grouped data.
+
+Example¶
+mappls.routeSummary({
+            map:map,
+            routeId:routeId,
+            index:0 , 
+            categories:"",
+            nodeId:"",
+            isGroup:0
+        },
+        function(data){
+            console.log(data);
+        });
+
+            
+            
+        
+Sample Implementation¶
+<html>
+   <head>
+      <title>Mappls Plugin - Route Events Summary</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="desciption" content="Mappls Route Report Summary Plugin">
+      <script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=routesummary"></script>
+      <style>
+         body{margin: 0}
+         #map{
+         width: 100%; height: 100vh;margin:0;padding: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="map"></div>
+      <script>
+         /*Map Initialization*/
+          var map = new mappls.Map('map', {center: [28.62, 77.09], zoom: 15, search: false});
+
+          /* RouteReport plugin initialization*/
+           mappls.routeSummary({
+                map:map,
+                routeId:routeId,
+                index:0 
+        },
+        function(data){
+            console.log(data);
+        });
+
+      </script>
+   </body>
+</html>
+
+            
+            
+        
+That's All !
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+Mappls Tracking Plugin¶
+Easy To Integrate Routing APIs & Map SDKs For Web Applications
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample code is provided to help you understand the very basic functionality of MapmyIndia APIs.
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+This plugin, offered by Mappls plugins for Web, allows one to track the path traveled.
+
+Features:
+
+Uses Mappls map
+Search for the destination place using Mappls API
+Route from source (current position) to destination.
+Custom Map controls and animation
+Live tracking user position and traveled coordinates
+This feature is also available inbuilt with Mappls Direction Plugin. For details, please contact apisupport@mapmyindia.com.
+
+Getting Access¶
+Before using the Plugin in the your solution, please ensure that the related access is enabled in the Mappls Console, in the same project you set up for the Maps SDK.
+
+Copy and paste the generated access token from your API keys available in the dashboard in the sample code for interactive map development.
+This APIs follow OAuth2 based security.
+Access Token can be generated using Mappls Portal
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Direction Plugin. See Sample Codes here
+Implementation¶
+Script URL¶
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=direction"></script>
+
+            
+            
+        
+Method¶
+direction_obj.tracking()
+
+Properties¶
+Mandatory Parameters¶
+map(object): vector map or raster map object from respective Mappls Map SDKs.
+location : current location . For eg - 28.63124010064198,77.46734619140625
+Optional Parameters¶
+label : to label the current position.
+icon : to show a custom marker. Supports PNG format as of now.
+heading : To control the rotation of the marker as per the route direction.For example if you are using a car icon, it would rotate as per the route direction otherwise it would move straight . Default is true.
+reRoute : To refresh the route as per the current location. This means the route will change as per the current location. If kept false the same route will be displayed. Default is true.
+fitbounds : Allowing this would fit the map in the view bound.Default is true.
+animationSpeed : Minimum breakage between the two received locations. For example animationSpeed : 5 means if the location received is 100 meters apart the animation would appear at every 5 meters. This parameter would decide the smoothness of the animation appearing on the screen.
+Example¶
+mappls.direction({
+            direction.tracking({
+                            location: 28.63124010064198,77.46734619140625,
+                            label:'current location',
+                            icon:"../img/mkr_start.png",
+                            heading: false,
+                            reRoute: true, 
+                            fitBounds:false,
+                            animationSpeed:5,
+
+        },
+        function(data){
+            console.log(data);
+        });
+
+            
+            
+        
+That's All !
+
+For any queries and support, please contact:
+
+Email us at apisupport@mappls.com
+
+
+
+Mappls Tracking Advanced Plugin¶
+Easy To Integrate Routing APIs & Map SDKs For Web Applications
+
+Getting Access¶
+Before using the API in the your solution, please ensure that the related access is enabled in the Mappls Console, within your app - be it for Mobile OR Web or Cloud integration.
+
+Copy and paste the key from your credentials section from your API keys into the access_token query parameter.
+Your static key can be secured by whitelisting its usage for particular IPs (in case of cloud app usage) OR a set of domains (in case of a web app)
+Your static key obtained from your Console is to be passed as a query parameter: access_token.
+The sample code is provided to help you understand the very basic functionality of MapmyIndia APIs.
+Authentication Object - access_token mandatory query parameter.¶
+access_token: "hklmgbwzrxncdyavtsuojqpiefrbhqplnm".
+Document Version History¶
+Version	Last Updated	Team	Author	Remarks
+1.0	07 Aug 2025	SDK Product Team	Prabhjot Kaur (PK)	OAuth 2
+Introduction¶
+This advanced tracking plugin, offered by Mappls plugins for Web, allows one to track the path traveled with smooth animation along the route. The smooth animation by plugin directly depend upon the frequency of the provided information on the current location, time, and speed of the vehicle being tracked to the plugin. More the Merrier!
+
+Getting Access¶
+Before using the Plugin in the your solution, please ensure that the related access is enabled in the Mappls Console, in the same project you set up for the Maps SDK.
+
+Copy and paste the generated access token from your API keys available in the dashboard in the sample code for interactive map development.
+This APIs follow OAuth2 based security.
+Access Token can be generated using Mappls Portal
+The sample codes are provided on our domain to help you understand the very basic functionality of Mappls Tracking Plugin. Javascript Code Example & Working NPM Code
+Implementation¶
+Initialize the Plugin¶
+#### Step 1: Initialize plugin SDK and add (& libraries=tracking) in the url
+
+<script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0&libraries=tracking"></script> 
+
+            
+            
+        
+#### Step 2 : Add map under div container in your project
+
+   <div id="map"></div>
+
+            
+            
+        
+Step 3 : Initialize Map¶
+map = new mappls.Map('map', {
+    center: [28.62988695137534, 77.4224575062193],
+                zoom: 12
+         })
+
+
+            
+            
+        
+Step 4 : Add tracking option in mappls.tracking() method¶
+var tracking_option = {
+    map: map, // Required mapObject
+    start: { geoposition: "28.63124010064198,77.46734619140625" }, // Required
+    via:[{geoposition:"28.63124010064198,77.5541"},
+           {geoposition:"28.631541442089226,77.4541"}], // optional
+    end: { geoposition: "28.631541442089226,77.37808227539064" }, // Required
+    resource:"route_eta", // optional
+profile: "driving", // optional
+    fitBounds: true,  // optional
+    connector:true, // default false /* to connect the path to end position */,
+connectorRouteColor:"gray",   /* connected path route color for end position */
+connectorRouteDash:[2, 2],   /* connected path route in dash array for end position */
+    ccpIcon:'location.png',  // optional
+    ccpIconWidth:70, // optional
+    strokeWidth:7, // optional
+    routeColor:"blue", // optional 
+dasharray:[2,2], // default None and optional 
+sPopup:"start text", // optional (for start icon popup)
+cPopup:"<h1>current popup</h1>" // optional you can also set html in current icon popup but only in current Icon not start and end
+dPopup:"end text", // optional (for end icon popup)
+start_icon: {  // optional
+        url: 'location.png',
+        width: 40, 
+        height: 40,
+        popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+        offset:[0, -18]
+    },
+    end_icon: {  // optional
+        url: 'location.png',
+        width: 40, 
+        height: 40,
+        popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+        offset:[0, -18]
+    }
+}
+
+            
+            
+        
+Mandatory Parameters¶
+map(object): vector map or raster map object from respective Mappls Map SDKs.
+start : route start location . For eg - { geoposition: "28.63124010064198,77.46734619140625" }
+end : route end location . For eg - { geoposition: "28.631541442089226,77.37808227539064" }
+Optional Parameters¶
+Via : via locations between the route For eg - [{geoposition:"28.63124010064198,77.5541"},{geoposition:"28.631541442089226,77.4541"}],
+resource :"route_eta", To set the route resource. Default to "route_eta".
+profile: “driving”, To set the profile for the route. Default to "driving".
+fitBounds (boolean): Whether to fit route and destination to map bound or not, default is true, // optional
+ccpIcon (string):'location.png', Allows to set URL of current rider position icon; Supports PNG format as of now.
+ccpIconWidth (integer): 70; signifies CCP icon's width, // optional
+ccpOffset (x,y): [0,20]; //signifies icon's offset in x,y pixels in a div.
+strokeWidth (integer): 7, // signifies width of the route polyline on the map; optional
+strokeOpacity (integer): //signifies opacity of the route polyline. //optional; default is 1. Opacity values from 0 to 1.
+routeColor (string): "blue", signifies polyline's color. // can take in hex codes as well; optional
+dasharray:[2,2], // default: none and optional; used to display route polyline as dashed polyline.
+sPopup :”start text”, // optional (for start icon popup)
+cPopup :”<h1>current popup</h1>”. To set html in current icon popup (parameter available only for current location Icon)
+dPopup :"end text", available for end icon popup
+start_icon : Supports PNG format as of now.
+    {   url: 'location.png',
+        width: 40, 
+        height: 40,
+        popupOptions:
+            {
+                offset: {'bottom': [0, -20]}, 
+                openPopup:false 
+            },
+        offset:[0, -18] 
+    }, 
+
+            
+            
+        
+- `start_icon`: `false` // if set as false then marker will not be visible
+
+            
+            
+        
+end_icon : Supports PNG format as of now.
+    {   url: 'location.png',
+        width: 40, 
+        height: 40 
+        popupOptions:
+        {
+            offset: {'bottom': [0, -20]}, 
+            openPopup:false 
+        },
+        /* offset:[0, -18] */
+    },
+
+            
+            
+        
+- `end_icon`: `false` // if set as false then marker will not be visible
+
+            
+            
+        
+connector : true, from the last navigable point on road to actual input destination coordinate // default false
+connectorRouteColor : "gray", //can take in hex color codes.
+connectorOpacity(integer): //signifies opacity of the connector polyline. //optional; default is 1. Opacity values from 0 to 1.
+connectorWidth(integer): 7, // signifies width of the connector polyline on the map; optional
+connectorRouteDash : [2, 2], //[Length, Space of the dashed segment from route end to destination coordinates]
+connectorVisible (boolean): To show/hide connector; this is only applicable when curveLine is being used. //default is true.
+curveLine (boolean):
+curveLineColor (string): "gray", signifies curve line's color. // can take in hex codes as well; optional
+curveLineOpacity (integer): //signifies opacity of the curve polyline. //optional; default is 1. Opacity values from 0 to 1.
+curveDasharray : [2,2], // default: none and optional; used to display route polyline as dashed polyline.
+curveLineStrokeWeight (integer): 7, // signifies width of the curve polyline on the map; optional
+curveLineFitbounds (boolean): Whether to include curve line in map fit bound or not, default is true, // optional
+orderId: Your reference orderId for tracking. // optional
+Step 5: Method call for Tracking Plugin¶
+// With tracking option as a variable
+
+mappls.tracking(tracking_option, function(data) {
+                        console.log(data);
+                        data1 = data;
+});
+
+
+            
+            
+        
+// Or Without tracking option as a variable
+mappls.tracking({
+    map: map,
+    start: {
+        geoposition: "28.63124010064198,77.46734619140625"
+    },
+    end: {
+        geoposition: "28.631541442089226,77.37808227539064"
+    },
+    fitBounds: true,
+    ccpIconWidth: 70,
+    strokeWidth: 7,
+    routeColor: "blue",
+    /*
+     cPopup:'<h3>Current Popup</h3>',
+     */
+}
+tracking_plugin = mappls.tracking(tracking_option, function(data) {
+    console.log(data);
+    trackingCallbackData = data;
+});
+}
+, function(data) {
+    console.log(data);
+    trackingCallbackData = data;
+});
+
+            
+            
+        
+Tracking callbacks¶
+trackingCallbackData.settrackfit(true/false); (default is true, fitbounds the track)
+trackingCallbackData.setccpContent(“content”); (set popup on start)
+DEPRECATED: trackingCallbackData.setLineHide(true/false); (to make path invisible)
+trackingCallbackData.removeCurveLine(); // to remove curved polylines.
+trackingCallbackData.setLineVisible(true); // to show/hide polyline on map.
+trackingCallbackData.setCcpVisible(true); // to show/hide ccp Icon(default is true).
+trackingCallbackData.getEta(function(data){console.log(data);}) //to fetch eta & distance from the plugin
+Recommendation: When you wish to switch between curved line and route line between source & destination¶
+Before rider picks up:¶
+Show the Curved line.
+curveLine:true
+Hide the Route line.
+strokeOpacity:0 and if connector:true, set connectorVisible:false
+After rider picks up:¶
+Call trackingCallBackData.removeCurveLine(); to remove the curved line.
+Call trackingCallBackData.setLineVisible(true); to set the route line to visible.
+Methods¶
+mappls.tracking()
+
+Step 6: Method to inject User data¶
+     trackingCallbackData.trackingCall({
+       location: user, // Required
+       reRoute: true, // default true or optional
+       heading: true, // default true
+       mapCenter: false, // default false
+       polylineRefresh: true /* it refreshes the covered route */,
+       buffer: 50, // default 25
+       etaRefresh: true /* to get distance and duration in callback */,
+       latentViz: false /* when clicked on map, icon first goes to clicked path with following route  */,
+       delay: 3000, // default 5000
+       fitCoverDistance:true, // default is false 
+       fitBounds: true, // default true
+       smoothFitBounds: false, //default: false; other values: "slow"||"med"||"fast"
+       fitboundsOptions: {
+         padding: 80,
+       },
+       callback: function (datap) {
+         console.log(datap);
+       },
+     });
+
+            
+            
+        
+IMPORTANT NOTE: This method should NOT be called in any scenario of less than 3 seconds. For best results, call this method at-least once every 15 seconds. For long duration tracking, it is recommended to call this method more frequently than the period between gethering rider locations - polling frequency of your tracking; keeping above restrictions in mind.
+
+Properties¶
+Mandatory Parameters¶
+location (array): Coordinate array as [longitude,latitude]
+Optional Parameters¶
+reRoute (boolean): To refresh the route as per the current location. This means the route will change as per the current location. If kept false the same route will be displayed. Default is true.
+heading (boolean): To control the rotation of the marker as per the route direction.For example if you are using a car icon, it would rotate as per the route direction otherwise it would move straight. Default is true.
+buffer (integer):50, The distance defined for call reroute for the provided current location.
+fitBounds (boolean): Allowing this would fit the map in the view bound. Default is true.
+mapCenter (boolean):true, keeps the current on the center of the map.
+fitBoundsOptions: add padding to the fitBounds, if fitBounds is set as true.
+    fitBoundsOptions: 
+    {
+        padding:80
+    }, // optional
+
+            
+            
+        
+fitCoverDistance (boolean): includes the last movement within the fitBounds call. //default is true
+polylineRefresh (boolean): removes the covered route as the rider progresses. // default true
+latentViz (boolean): Smooth visualization when rider suddenly jumps off-route. Incurs an additional routing call.// default false
+etaRefresh (boolean): updates the ETA if the route followed has not changed periodically to reflect the ever changing live traffic.// default false
+delay (integer): miliseconds indicating within how much time each subsequent location movement animation is to be completed. Default is 3000 ms.
+smoothFitBounds (boolean or string): To enable/disable ultra-smooth fitbound automation that the widget performs with each animation - even with interpolated data. // default false with options to set it to "slow" OR "med" OR "fast"; wherein:
+slow - fitbound action every 1 interpolated location.
+med - fitbound action every 3 interpolated location.
+fast - fitbound action every 5 interpolated location.
+Multi Stop Routing¶
+This Multi Stop Routing allows users to define and manage via points. Via points represent important locations along a route, such as waypoints, checkpoints, or stops. Each via point is assigned a unique ID, a geographical position (latitude & longitude), and a custom marker icon for easy identification on the map.
+
+via:[{
+                            geoposition:"28.42856320576533,77.5266396473998", 
+                            id:'via1',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/2.png',
+                                popupHtml:'Via 1',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                        },
+                        {
+                            geoposition:"28.44275991192795,77.51372861117522",
+                            id:'via2',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/1.png',
+                                popupHtml:'Via 2',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                        },
+                        {
+                            geoposition:"28.452552810748116,77.49571088868709",
+                            id:'via3',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/2.png',
+                                popupHtml:'Via 3',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                    }],
+
+
+            
+            
+        
+Method for removing via using ID¶
+For removing a single via point
+data1.removeVia('via1', function(data){
+    console.log(data);
+});
+
+            
+            
+        
+For removing multiple via points
+data1.removeVia('via1,via2', function(data){
+    console.log(data);
+});
+
+            
+            
+        
+Multi Stop Routing Properties :¶
+via (Array) : Stores a list of via points for a route.
+
+geoposition (String) : Latitude and longitude of a via point.
+
+id (String) : Unique identifier for each via point.
+
+icon (Object) : Defines the marker/icon properties for each via point.
+
+url (String) : URL of the marker image.
+
+popupHtml (String) : Text that appears when the icon's popup is displayed.
+
+width (Number) : Width of the marker icon in pixels.
+
+height (Number) : Height of the marker icon in pixels.
+
+popupOptions (Object) : Additional settings for the popup.
+
+offset (Object) : Defines the offset for the popup position.
+
+openPopup (Boolean) : Determines whether the popup should open by default.
+
+Implementation Example¶
+
+  <html>
+  <head>
+    <title>Tracking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tracking">
+
+        <script src="https://apis.mappls.com/advancedmaps/api/<Token>/map_sdk?layer=vector&v=3.0&callback=initMap1"></script>
+          <script src="https://sdk.mappls.com/map/sdk/plugins?access_token=<Static Key>&v=3.0"></script>
+          <style>
+        body {
+            margin: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div id="map"></div>
+                <script>
+            /*Map Initialization*/
+            var map;
+
+            function initMap1() {
+                map = new mappls.Map('map', {
+                    center: [28.62988695137534, 77.4224575062193],
+                    zoom: 12
+                });
+                map.addListener('load', function() {
+                    /*tracking plugin initialization*/
+                    var tracking_option = {
+                        map: map,
+                        start: {
+                            geoposition: "28.63124010064198,77.46734619140625"
+                        },
+                        end: {
+                            geoposition: "28.631541442089226,77.37808227539064"
+                        },
+                        fitBounds: true,
+                        ccpIconWidth: 70,
+                        strokeWidth: 7,
+                        routeColor: "blue",
+                        /* 
+                        cPopup:'<h3>Current Popup</h3>',
+                         */
+                        //For Multi Stop Routing via array of stops
+                        via:[{
+                            geoposition:"28.42856320576533,77.5266396473998", 
+                            id:'via1',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/2.png',
+                                popupHtml:'Via 1',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                        },
+                        {
+                            geoposition:"28.44275991192795,77.51372861117522",
+                            id:'via2',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/1.png',
+                                popupHtml:'Via 2',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                        },
+                        {
+                            geoposition:"28.452552810748116,77.49571088868709",
+                            id:'via3',
+                            icon:{
+                                url:'https://apis.mappls.com/map_v3/2.png',
+                                popupHtml:'Via 3',
+                                width:30,
+                                height:45,
+                                popupOptions:{offset: {'bottom': [0, -20]}, openPopup:false },
+                                /* offset:[0, -18] */
+                            }
+                    }],
+                    }
+                    tracking_plugin = mappls.tracking(tracking_option, function(data) {
+                        console.log(data);
+                        data1 = data;
+                    });
+                });
+
+                map.on('click', function(e) {
+                    var user = [e.lngLat.lng, e.lngLat.lat];
+                    data1.trackingCall({
+                        location: user,
+                        reRoute: true,
+                        heading: true,
+                        mapCenter: false,
+                        buffer: 50,
+                        delay: 3000,
+                        fitBounds: false,
+                        fitboundsOptions: {
+                            padding: 80
+                        },
+                        callback: function(data) {
+                            console.log(data)
+                        }
+                    });
+                });
+            }
+        </script>
+        </body>
+  </html>
+
+
+            
+            
+        
+That's All !
