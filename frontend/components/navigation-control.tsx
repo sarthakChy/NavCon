@@ -11,6 +11,7 @@ export default function NavigationControl({ map }: NavigationControlProps) {
   const [currentLocation, setCurrentLocation] = useState<{
     lat: number;
     lng: number;
+    heading?: number | null;
   } | null>(null);
   const trackingPluginRef = useRef<any>(null);
   const watchIdRef = useRef<number | null>(null);
@@ -33,26 +34,28 @@ export default function NavigationControl({ map }: NavigationControlProps) {
         const newLocation = {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
+          heading: position.coords.heading,
         };
         setCurrentLocation(newLocation);
 
         const now = Date.now();
         const timeSinceLastUpdate = now - lastUpdateRef.current;
 
-        if (timeSinceLastUpdate >= 15000 && trackingPluginRef.current) {
+        // Update more frequently (every 1s instead of 15s) for smoother movement
+        if (timeSinceLastUpdate >= 1000 && trackingPluginRef.current) {
           console.log("Updating tracking position:", newLocation);
 
           trackingPluginRef.current.trackingCall({
             location: [newLocation.lng, newLocation.lat],
             reRoute: true,
-            heading: true,
+            heading: newLocation.heading || true, // Use real GPS heading if available, else auto
             mapCenter: true,
-            buffer: 50,
-            delay: 3000,
+            buffer: 30, // Reduced buffer for tighter tracking
+            delay: 0, // Instant update, no animation delay
             etaRefresh: true,
-            fitBounds: true,
+            fitBounds: false, // Don't fit bounds on every update, user might have zoomed in
             callback: (data: any) => {
-              console.log("Tracking update:", data);
+              console.log("Tracking update success:", data);
             },
           });
 
