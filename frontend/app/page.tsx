@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import MapplsMap from '@/components/mappls-map';
-import MapPlugins from '@/components/map-plugins';
+import { useState } from "react";
+import MapplsMap from "@/components/mappls-map";
+import MapPlugins from "@/components/map-plugins";
+import NavigationControl from "@/components/navigation-control";
 
 export default function Home() {
   const [map, setMap] = useState<any>(null);
@@ -14,17 +15,20 @@ export default function Home() {
 
   return (
     <main className="w-full h-screen relative">
+      <MapplsMap className="w-full h-full" onMapLoad={handleMapLoad} />
+
       {/* Map Plugin Controls */}
       {map && (
-        <MapPlugins 
-          map={map}
-          onNearbyResults={(results) => {
-            console.log("Nearby results received:", results);
-          }}
-        />
+        <>
+          <MapPlugins
+            map={map}
+            onNearbyResults={(results) => {
+              console.log("Nearby results received:", results);
+            }}
+          />
+          <NavigationControl map={map} />
+        </>
       )}
-      
-      <MapplsMap className="w-full h-full" onMapLoad={handleMapLoad} />
     </main>
   );
 }

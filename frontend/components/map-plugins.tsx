@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 interface MapPluginsProps {
   map: any;
@@ -9,14 +9,60 @@ interface MapPluginsProps {
 
 export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
   const [showNearby, setShowNearby] = useState(false);
-  const [nearbyKeyword, setNearbyKeyword] = useState('');
+  const [nearbyKeyword, setNearbyKeyword] = useState("");
   const nearbyPluginRef = useRef<any>(null);
   const nearbyMarkersRef = useRef<any[]>([]);
+
+  // Direction State
+  const [showDirection, setShowDirection] = useState(false);
+  const [startLoc, setStartLoc] = useState("");
+  const [endLoc, setEndLoc] = useState("");
+  const directionPluginRef = useRef<any>(null);
+
+  // Initialize Direction Plugin
+  const initDirection = () => {
+    if (!map || !window.mappls || !window.mappls.direction) {
+      alert("Mappls plugins not loaded yet. Please wait.");
+      return;
+    }
+
+    if (directionPluginRef.current) {
+      // clear previous if any? plugin usually handles updates
+      // directionPluginRef.current.remove();
+    }
+
+    const directionOptions = {
+      map: map,
+      start: startLoc, // e.g., "28.61,77.23" or "Delhi"
+      end: endLoc, // e.g., "28.70,77.10" or "Gurgaon"
+      callback: (data: any) => {
+        console.log("Direction Data Received:", data);
+        if (data) {
+          console.log("Keys:", Object.keys(data));
+          (window as any).directionPluginData = data;
+        } else {
+          console.error("Received empty data from direction plugin");
+        }
+      },
+    };
+
+    // Calculate Direction
+    directionPluginRef.current = window.mappls.direction(directionOptions);
+  };
+
+  const clearDirection = () => {
+    if (directionPluginRef.current && directionPluginRef.current.remove) {
+      directionPluginRef.current.remove();
+      (window as any).directionPluginData = null;
+    }
+    setStartLoc("");
+    setEndLoc("");
+  };
 
   // Initialize Nearby Search Plugin
   const initNearbySearch = () => {
     if (!map || !window.mappls || !window.mappls.nearby) {
-      alert('Mappls plugins not loaded yet. Please wait.');
+      alert("Mappls plugins not loaded yet. Please wait.");
       return;
     }
 
@@ -30,68 +76,74 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
 
       const nearbyOptions = {
         map: map,
-        keywords: nearbyKeyword || 'restaurant',
+        keywords: nearbyKeyword || "restaurant",
         refLocation: refLocation,
         fitbounds: true,
         geolocation: false,
         radius: 5000, // 5km radius
         popup: false, // Disable default popup
         icon: {
-          url: 'https://apis.mappls.com/map_v3/1.png',
+          url: "https://apis.mappls.com/map_v3/1.png",
           width: 30,
-          height: 40
-        }
+          height: 40,
+        },
       };
 
-      nearbyPluginRef.current = window.mappls.nearby(nearbyOptions, (results: any) => {
-        console.log('Nearby results:', results);
-        
-        // Add click handlers to each result marker
-        if (results && Array.isArray(results)) {
-          results.forEach((place: any) => {
-            // Create markers manually with click handlers
-            if (place.eLoc && window.mappls && window.mappls.Marker) {
-              const marker = new window.mappls.Marker({
-                position: [place.latitude || place.lat, place.longitude || place.lng],
-                map: map,
-                title: place.placeName,
-                icon: {
-                  url: 'https://apis.mappls.com/map_v3/1.png',
-                  width: 30,
-                  height: 40
-                }
-              });
-              
-              // Add click listener to show details
-              marker.addListener('click', () => {
-                console.log('Marker clicked for:', place);
-                showPlaceDetails(place.eLoc);
-              });
-              
-              nearbyMarkersRef.current.push(marker);
-            }
-          });
+      nearbyPluginRef.current = window.mappls.nearby(
+        nearbyOptions,
+        (results: any) => {
+          console.log("Nearby results:", results);
+
+          // Add click handlers to each result marker
+          if (results && Array.isArray(results)) {
+            results.forEach((place: any) => {
+              // Create markers manually with click handlers
+              if (place.eLoc && window.mappls && window.mappls.Marker) {
+                const marker = new window.mappls.Marker({
+                  position: [
+                    place.latitude || place.lat,
+                    place.longitude || place.lng,
+                  ],
+                  map: map,
+                  title: place.placeName,
+                  icon: {
+                    url: "https://apis.mappls.com/map_v3/1.png",
+                    width: 30,
+                    height: 40,
+                  },
+                });
+
+                // Add click listener to show details
+                marker.addListener("click", () => {
+                  console.log("Marker clicked for:", place);
+                  showPlaceDetails(place.eLoc);
+                });
+
+                nearbyMarkersRef.current.push(marker);
+              }
+            });
+          }
+
+          if (onNearbyResults) {
+            onNearbyResults(results);
+          }
         }
-        
-        if (onNearbyResults) {
-          onNearbyResults(results);
-        }
-      });
+      );
     } catch (error) {
-      console.error('Error initializing Nearby plugin:', error);
-      alert('Failed to initialize Nearby search');
+      console.error("Error initializing Nearby plugin:", error);
+      alert("Failed to initialize Nearby search");
     }
   };
 
   // Clear nearby markers
   const clearNearbyMarkers = () => {
-    nearbyMarkersRef.current.forEach(marker => {
+    nearbyMarkersRef.current.forEach((marker) => {
       try {
-        if (marker && typeof marker.remove === 'function') {
+        if (marker && typeof marker.remove === "function") {
           marker.remove();
         }
       } catch (e) {
-        console.warn('Error removing marker:', e);
+        console.warn("Error removing marker:", e);
       }
     });
     nearbyMarkersRef.current = [];
@@ -100,32 +152,35 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
   // Show place details using getPinDetails with infoDiv
   const showPlaceDetails = (eLoc: string) => {
     if (!map || !window.mappls || !window.mappls.getPinDetails) {
-      console.warn('getPinDetails plugin not available');
+      console.warn("getPinDetails plugin not available");
       return;
     }
 
     try {
       if (!eLoc) {
-        console.warn('No eLoc provided');
+        console.warn("No eLoc provided");
         return;
       }
 
-      console.log('Showing details for eLoc:', eLoc);
+      console.log("Showing details for eLoc:", eLoc);
 
       // Use getPinDetails to show info div
-      const detailsObj = window.mappls.getPinDetails({
-        map: map,
-        pin: eLoc,
-        infoDiv: true // Show detailed info panel
-      }, (detailsData: any) => {
-        console.log('Place details loaded:', detailsData);
-        // Fit bounds to show the place
-        if (detailsObj && typeof detailsObj.fitbounds === 'function') {
-          detailsObj.fitbounds({ maxZoom: 16 });
+      const detailsObj = window.mappls.getPinDetails(
+        {
+          map: map,
+          pin: eLoc,
+          infoDiv: true, // Show detailed info panel
+        },
+        (detailsData: any) => {
+          console.log("Place details loaded:", detailsData);
+          // Fit bounds to show the place
+          if (detailsObj && typeof detailsObj.fitbounds === "function") {
+            detailsObj.fitbounds({ maxZoom: 16 });
+          }
         }
-      });
+      );
     } catch (error) {
-      console.error('Error showing place details:', error);
+      console.error("Error showing place details:", error);
     }
   };
 
@@ -133,11 +188,14 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
   useEffect(() => {
     return () => {
       clearNearbyMarkers();
-      if (nearbyPluginRef.current && typeof nearbyPluginRef.current.remove === 'function') {
+      if (
+        nearbyPluginRef.current &&
+        typeof nearbyPluginRef.current.remove === "function"
+      ) {
         try {
           nearbyPluginRef.current.remove();
         } catch (e) {
-          console.warn('Error removing nearby plugin:', e);
+          console.warn("Error removing nearby plugin:", e);
         }
       }
     };
@@ -145,6 +203,56 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
 
   return (
     <div className="absolute top-4 right-4 z-10 space-y-2">
+      {/* Direction Control */}
+      <div className="bg-white shadow-lg rounded-lg p-3">
+        <button
+          onClick={() => {
+            setShowDirection(!showDirection);
+            setShowNearby(false);
+          }}
+          className="w-full px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors text-sm font-medium mb-2"
+        >
+          🛣️ Direction
+        </button>
+
+        {showDirection && (
+          <div className="mt-2 space-y-2">
+            <div>
+              <input
+                type="text"
+                value={startLoc}
+                onChange={(e) => setStartLoc(e.target.value)}
+                placeholder="Start: '28.61,77.23' or 'Delhi'"
+                className="w-full text-sm p-2 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                value={endLoc}
+                onChange={(e) => setEndLoc(e.target.value)}
+                placeholder="End: '28.70,77.10' or 'Gurgaon'"
+                className="w-full text-sm p-2 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={initDirection}
+                className="flex-1 bg-green-600 text-white px-3 py-2 rounded text-xs hover:bg-green-700"
+              >
+                Get Route
+              </button>
+              <button
+                onClick={clearDirection}
+                className="flex-1 bg-red-500 text-white px-3 py-2 rounded text-xs hover:bg-red-600"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* Nearby Search Control */}
       <div className="bg-white shadow-lg rounded-lg p-3">
         <button
@@ -153,7 +261,7 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
         >
           🔍 Nearby Search
         </button>
-        
+
         {showNearby && (
           <div className="mt-3 space-y-2">
             <input
@@ -171,18 +279,18 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
               Search Nearby
             </button>
             <div className="text-xs text-gray-500 mt-1">
-              Searches within 5km radius of map center. Click markers for details.
+              Searches within 5km radius of map center. Click markers for
+              details.
             </div>
           </div>
         )}
       </div>
 
-
       {/* Quick Nearby Categories */}
       <div className="bg-white shadow-lg rounded-lg p-3">
         <div className="text-xs font-bold text-gray-700 mb-2">Quick Search</div>
         <div className="grid grid-cols-2 gap-2">
-          {['ATM', 'Restaurant', 'Hospital', 'Petrol Pump'].map((category) => (
+          {["ATM", "Restaurant", "Hospital", "Petrol Pump"].map((category) => (
             <button
               key={category}
               onClick={() => {
@@ -192,43 +300,56 @@ export default function MapPlugins({ map, onNearbyResults }: MapPluginsProps) {
                 setTimeout(() => {
                   if (map && window.mappls && window.mappls.nearby) {
                     const center = map.getCenter();
-                    nearbyPluginRef.current = window.mappls.nearby({
-                      map: map,
-                      keywords: category,
-                      refLocation: [center.lat, center.lng],
-                      fitbounds: true,
-                      radius: 3000,
-                      popup: false
-                    }, (results: any) => {
-                      console.log(category + ' results:', results);
-                      
-                      // Add click handlers to each result marker
-                      if (results && Array.isArray(results)) {
-                        results.forEach((place: any) => {
-                          if (place.eLoc && window.mappls && window.mappls.Marker) {
-                            const marker = new window.mappls.Marker({
-                              position: [place.latitude || place.lat, place.longitude || place.lng],
-                              map: map,
-                              title: place.placeName,
-                              icon: {
-                                url: 'https://apis.mappls.com/map_v3/1.png',
-                                width: 30,
-                                height: 40
-                              }
-                            });
-                            
-                            marker.addListener('click', () => {
-                              console.log('Quick search marker clicked:', place);
-                              showPlaceDetails(place.eLoc);
-                            });
-                            
-                            nearbyMarkersRef.current.push(marker);
-                          }
-                        });
+                    nearbyPluginRef.current = window.mappls.nearby(
+                      {
+                        map: map,
+                        keywords: category,
+                        refLocation: [center.lat, center.lng],
+                        fitbounds: true,
+                        radius: 3000,
+                        popup: false,
+                      },
+                      (results: any) => {
+                        console.log(category + " results:", results);
+
+                        // Add click handlers to each result marker
+                        if (results && Array.isArray(results)) {
+                          results.forEach((place: any) => {
+                            if (
+                              place.eLoc &&
+                              window.mappls &&
+                              window.mappls.Marker
+                            ) {
+                              const marker = new window.mappls.Marker({
+                                position: [
+                                  place.latitude || place.lat,
+                                  place.longitude || place.lng,
+                                ],
+                                map: map,
+                                title: place.placeName,
+                                icon: {
+                                  url: "https://apis.mappls.com/map_v3/1.png",
+                                  width: 30,
+                                  height: 40,
+                                },
+                              });
+
+                              marker.addListener("click", () => {
+                                console.log(
+                                  "Quick search marker clicked:",
+                                  place
+                                );
+                                showPlaceDetails(place.eLoc);
+                              });
+
+                              nearbyMarkersRef.current.push(marker);
+                            }
+                          });
+                        }
+
+                        if (onNearbyResults) onNearbyResults(results);
                       }
-                      
-                      if (onNearbyResults) onNearbyResults(results);
-                    });
+                    );
                   }
                 }, 100);
               }}

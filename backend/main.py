@@ -58,4 +58,20 @@ async def token_endpoint():
 
 if __name__ == "__main__":
     import uvicorn
+    import sys
+
+    # Optional: Start ngrok to expose backend
+    # To use: pip install pyngrok
+    # And set NGROK_AUTHTOKEN in environment if needed
+    if "--ngrok" in sys.argv or os.getenv("USE_NGROK") == "true":
+        try:
+            from pyngrok import ngrok
+            # Open a HTTP tunnel on the default port 8000
+            public_url = ngrok.connect(8000).public_url
+            print(f" \n\n  🚀 Public URL: {public_url} \n\n")
+        except ImportError:
+            print("pyngrok not installed. Run: pip install pyngrok")
+        except Exception as e:
+            print(f"Could not start ngrok: {e}")
+
     uvicorn.run(app, host="0.0.0.0", port=8000)

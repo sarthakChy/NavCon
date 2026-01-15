@@ -1,4 +1,4 @@
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export async function getAccessToken() {
   const res = await fetch(`${BACKEND_URL}/api/token`);
